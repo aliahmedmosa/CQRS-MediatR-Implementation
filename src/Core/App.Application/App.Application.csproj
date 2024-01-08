@@ -11,6 +11,18 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Products\Handlers\Command\" />
+    <Folder Include="Features\Products\Handlers\Query\" />
+    <Folder Include="Features\Products\Requests\Command\" />
+    <Folder Include="Features\Products\Requests\Query\" />
+    <Folder Include="Features\zDomain-Model\Handlers\Command\" />
+    <Folder Include="Features\zDomain-Model\Handlers\Query\" />
+    <Folder Include="Features\zDomain-Model\Requests\Command\" />
+    <Folder Include="Features\zDomain-Model\Requests\Query\" />
   </ItemGroup>
 
 </Project>
