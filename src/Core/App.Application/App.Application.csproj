@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Products\Handlers\Command\" />
-    <Folder Include="Features\Products\Handlers\Query\" />
-    <Folder Include="Features\Products\Requests\Command\" />
-    <Folder Include="Features\Products\Requests\Query\" />
     <Folder Include="Features\zDomain-Model\Handlers\Command\" />
     <Folder Include="Features\zDomain-Model\Handlers\Query\" />
     <Folder Include="Features\zDomain-Model\Requests\Command\" />
