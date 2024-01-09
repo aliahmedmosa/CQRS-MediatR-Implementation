@@ -20,6 +20,7 @@ namespace App.Persistence.DatabaseContext
             {
                 if(entry.State==EntityState.Added)
                     entry.Entity.CreatedDate = DateTime.Now;
+
                 if (entry.State == EntityState.Modified)
                     entry.Entity.ModifiedDate = DateTime.Now;
             }
