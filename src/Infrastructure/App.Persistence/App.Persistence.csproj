@@ -5,4 +5,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\App.Application\App.Application.csproj" />
+    <ProjectReference Include="..\..\Core\App.Domain\App.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
