@@ -2,8 +2,13 @@
 {
     public class Category : BaseEntity<int>
     {
-        public Category(string name, string desciption)
+        public Category()
         {
+            
+        }
+        public Category(int id,string name, string desciption)
+        {
+            Id = id;
             Name = name;
             Desciption = desciption;
         }

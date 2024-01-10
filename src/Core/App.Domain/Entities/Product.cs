@@ -4,9 +4,14 @@ namespace App.Domain.Entities
 {
     public class Product : BaseEntity<int>
     {
-        public Product(string name, string desciption
+        public Product()
+        {
+            
+        }
+        public Product(int id,string name, string desciption
                        ,decimal price,int categoryId)
         {
+            Id=id;
             Name = name;
             Description = desciption;
             Price = price;
@@ -14,6 +19,8 @@ namespace App.Domain.Entities
         }
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
+
+        [Column(TypeName ="decimal(18,2)")]
         public decimal Price { get; set; }
 
         //Navigational prop
