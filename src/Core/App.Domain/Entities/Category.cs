@@ -4,9 +4,9 @@
     {
         public Category()
         {
-            
+
         }
-        public Category(int id,string name, string desciption)
+        public Category(int id, string name, string desciption)
         {
             Id = id;
             Name = name;

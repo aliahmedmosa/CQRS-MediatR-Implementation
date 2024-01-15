@@ -12,7 +12,7 @@
         }
         public async Task<List<ProductDto>> Handle(GetAllProductsRequest request, CancellationToken cancellationToken)
         {
-            var products = await _repository.GetAllAsync();
+            var products = await _repository.GetAllAsyncWithInclude();
             var res = _mapper.Map<List<ProductDto>>(products);
             return res;
         }
